@@ -1,9 +1,10 @@
 # Laboratorna_5
-Лабораторна робота №5
-Варіант 16
-Створіть клас Fighter (name, health, damagePerAttack). Додайте клас Fight, який міститиме пару бійців і метод,
-який повертає ім’я переможця в поєдинку двох бійців. Кожен боєць по черзі нападає на іншого, і той, 
-хто першим вбиває іншого, перемагає. Смерть визначається як стан здоров'я <= 0.
-Для запуску програми створіть в Visual Studio 2019 новий проект за шаблоном "Empty project(C++)" і додайте до нього в: 
+Laboratory work №5
+Variant 16
+Create class Fighter (name, health, damagePerAttack). Add class Fight that includes a method
+that returns name of the winner of the duel of the two fighters. Fighters attack each othe in turns and the one
+who kills the other wins. Death is defined as the state of health <= 0.
+To launch the program you should create a  Visual Studio 2019 new project by "Empty project(C++)" template
+and add to it: 
 Resource files: source.cpp, Fighter.cpp i Fight.cpp;  
 Header files: Fighter.h i Fight.h.
