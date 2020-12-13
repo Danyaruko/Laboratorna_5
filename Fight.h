@@ -4,18 +4,21 @@
 
 class Fight {
 private: 
-	Fighter A;
-	Fighter B;
+	Fighter first_fighter;
+	Fighter second_fighter;
 	int winner;
 	int initiator;
+
 public:
+	friend class Fighter;
+
 	Fight();
 	~Fight();
-	Fighter get_A();
-	Fighter get_B();
+
+	Fighter get_first_fighter();
+	Fighter get_second_fighter();
 	int get_winner();
 	int get_initiator();
-	friend class Fighter;
 	void David_and_Goliath(Fighter fighter1, Fighter fighter2);
 	void duel(Fighter fighter1, Fighter fighter2);
 };

@@ -2,9 +2,11 @@
 #include "Fight.h"
 #include "Fighters.h"
 
+
 Fight::Fight() {
 	std::cout << "Prepare for the fight!\n";
 }
+
 Fight::~Fight() {
 	std::cout << "Cleaning up the battlefield...\n";
 }
@@ -14,6 +16,7 @@ void Fight::David_and_Goliath(Fighter fighter1, Fighter fighter2) {
 	if (fighter2.get_health() >= fighter1.get_health()) initiator = 1;
 	else initiator = 2;
 }
+
 void Fight::duel(Fighter fighter1, Fighter fighter2) {
 	std::cout << "Fight is about to start!\n";
 	std::cout << "First fighter is " << fighter1.get_name() << '\n';
@@ -70,15 +73,19 @@ void Fight::duel(Fighter fighter1, Fighter fighter2) {
 		std::cout << "Winner`s name is " << fighter1.get_name() << '\n';
 	}
 }
+
 int Fight::get_initiator() {
 	return initiator;
 }
+
 int Fight::get_winner() {
 	return winner;
 }
-Fighter Fight::get_A() {
-	return A;
+
+Fighter Fight::get_first_fighter() {
+	return first_fighter;
 }
-Fighter Fight::get_B() {
-	return B;
+
+Fighter Fight::get_second_fighter() {
+	return second_fighter;
 }

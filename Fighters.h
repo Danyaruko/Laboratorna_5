@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 
+
 class Fighter {
 private:
 	std::string name;
@@ -9,8 +10,10 @@ private:
 	int* phealth;
 	int damage;
 	int* pdamage;
+
 public:
 	friend class Fight;
+
 	Fighter();
 	~Fighter();
 	void set_name();
@@ -24,5 +27,4 @@ public:
 	int get_damage(Fighter fighter);
 	void input();
 	void output();
-
 };
